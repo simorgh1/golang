@@ -35,7 +35,7 @@ user@host1:~$ curl http://<your-raspi-ip>:8090/headers
 
 ## Building without debug files
 
-In order to reduce the size og compiled golang build, we could pass the following build arguments for building a smaller size by excluding debug information.
+In order to reduce the size of compiled golang build, we could pass the following build arguments for building a smaller size by excluding debug information.
 
 ```bash
 go build -ldflags "-s -w" ./hello.go
