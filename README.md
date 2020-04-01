@@ -1,4 +1,4 @@
-# Build your RaspberryPi app in WSL
+# Build your RaspberryPi app in WSL using golang
 
 ## Install golang on WSL
 
