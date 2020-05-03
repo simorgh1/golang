@@ -4,6 +4,10 @@ import "fmt"
 
 func main() {
 
+	invertString()
+}
+
+func invertString() {
 	str := "Hello World!"
 
 	fmt.Printf("Invert the ascii string: '%s'\n", str)
