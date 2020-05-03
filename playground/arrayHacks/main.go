@@ -16,6 +16,7 @@ func main() {
 	rotate(nums, 5)
 }
 
+// A sorted array with duplicated items is rearranged and printed as a sorted unique members with new size
 func removeDuplicates(x []int) {
 
 	i := 0
@@ -27,9 +28,11 @@ func removeDuplicates(x []int) {
 		}
 	}
 
+	// the new size which contains the unique sorted items is i+1
 	fmt.Printf("Cleaned: %d, size:%d, cap:%d\n", x[0:i+1], len(x[0:i+1]), cap(x[0:i+1]))
 }
 
+// It rotates the array by k items and prints the result
 func rotate(x []int, k int) {
 
 	for j := 0; j < k; j++ {
@@ -39,6 +42,7 @@ func rotate(x []int, k int) {
 			x[l+1] = x[l]
 		}
 
+		// replace the first items with the last item after rotation
 		x[0] = last
 	}
 
